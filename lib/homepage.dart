@@ -1,5 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gdsc/main.dart';
@@ -37,10 +37,23 @@ class _homepage extends State<homepage> {
 
       body: Container(
         decoration: const BoxDecoration(
-            image: DecorationImage(image: AssetImage("assets/doodle.jpg"),opacity: 0.15,fit: BoxFit.cover),
+            image: DecorationImage(image: AssetImage("assets/doodle.jpg"),opacity: 0.1,fit: BoxFit.cover),
         ),
         child: Stack(
           children: <Widget>[
+            Align(
+              alignment: Alignment(0, -0.8),
+              child: Text("NEOM",
+                  style: GoogleFonts.montserrat(
+                      fontSize: 43,
+                      fontWeight: FontWeight.w200,
+                      shadows: <Shadow>[
+                        const Shadow(
+                            offset: Offset(0.0, 2.0),
+                            blurRadius: 5.0,
+                            color: Colors.black87),
+                      ])),
+            ),
 
             Align(
 
